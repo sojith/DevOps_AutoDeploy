@@ -42,7 +42,7 @@ class handler_class(CGIHTTPRequestHandler):
 def gitAction(Artifact, Action):
     if (os.path.exists('/home/emperor/Projects/Devops_Project/code/.git') != True):
         print("myserver.py -- " + "Cloning Repository.....")
-        git.Repo.clone_from("https://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@github.com/sojith/DevOps.git","/home/emperor/Projects/Devops_Project/code")
+        git.Repo.clone_from("https://<token-goes-here>@github.com/sojith/DevOps.git","/home/emperor/Projects/Devops_Project/code")
     else:
         rep1 = git.Repo('/home/emperor/Projects/Devops_Project/code/.git')    
         print("myserver.py -- " + "Pulling repository......")
