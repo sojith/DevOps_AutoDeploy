@@ -1,6 +1,6 @@
 # AutoDeployment
 
-This project is meant to show how one can automatically deploy any code commits into a test env server
+This project is meant to show how code commits can automatically be deployed into a test env server
 
 1) https://github.com/sojith/DevOps/blob/main/App/app.js - This is a simple NodeJS script used to host a page. The github repo on which this is hosted has an outgoing webhook. Any commits in this repo leads to the webhook sending a post message to an endpoint (this endpoint is mentioned in the point below)
 
